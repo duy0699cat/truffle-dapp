@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import certificationContract from "./contracts/Certification.json";//
 import getWeb3 from "./getWeb3";//
 import "./App.css";
@@ -32,9 +31,6 @@ class App extends Component {
   };
 
   runExample = async () => {
-//    const { accounts, certificationContract } = this.state;
-
-
   };
 
   setData = async () => {
@@ -47,7 +43,7 @@ class App extends Component {
     var date = document.getElementById("date").value;
     console.log("\ncheck cerf account:");
     console.log(accounts[0]);
-    // Stores a given value, 5 by default
+
      try{await certificationContract.methods.generateCertificate(id,n1,n2,n3,date).send({ from: accounts[0]});}
      catch(error){ alert("create contract error");
      console.log(error);
@@ -64,7 +60,7 @@ class App extends Component {
     var result;
     try{
      result = await certificationContract.methods.getData(id2).call();
-     console.log("result is: ");
+    // console.log("result is: ");
     //console.log(result);
 
   }

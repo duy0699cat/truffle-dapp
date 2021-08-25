@@ -59,7 +59,7 @@
   "sourceMap": "67:311:1:-;;;219:50;8:9:-1;5:2;;;30:1;27;20:12;5:2;219:50:1;254:10;246:5;;:18;;;;;;;;;;;;;;;;;;67:311;;;;;;",
   "deployedSourceMap": "67:311:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;67:311:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;115:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;91:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;273:103;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;273:103:1;;;;;;;;;;;;;;;;;:::i;:::-;;115:36;;;;:::o;91:20::-;;;;;;;;;;;;;:::o;273:103::-;202:5;;;;;;;;;;;188:19;;:10;:19;;;184:26;;;362:9;335:24;:36;;;;184:26;273:103;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.5.16; //<0.7.0\n\ncontract Migrations {\n  address public owner;\n  uint public last_completed_migration;\n\n  modifier restricted() {\n    if (msg.sender == owner) _;\n  }\n\n  constructor() public {\n    owner = msg.sender;\n  }\n\n  function setCompleted(uint completed) public restricted {\n    last_completed_migration = completed;\n  }\n}\n",
-  "sourcePath": "C:\\Users\\Administrator\\Desktop\\truffle-dapp\\contracts\\Migrations.sol",
+  "sourcePath": "C:\\Users\\Administrator\\Desktop\\GitHub\\truffle-dapp\\contracts\\Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -173,7 +173,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 214,
+                        "referencedDeclaration": 187,
                         "src": "188:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -277,7 +277,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 214,
+                        "referencedDeclaration": 187,
                         "src": "254:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -620,7 +620,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 214,
+                                  "referencedDeclaration": 187,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -757,7 +757,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 214,
+                                  "referencedDeclaration": 187,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -952,18 +952,12 @@
     "4444": {
       "events": {},
       "links": {},
-      "address": "0xd117BdAF159AEd449851D8e1Ea3d75bceBC06e23",
-      "transactionHash": "0xf9ec6146af62619cc11674fc310c0a24c40ee1f8778bed9d9694fe0b0f053218"
-    },
-    "5777": {
-      "events": {},
-      "links": {},
-      "address": "0x66771d23debf522c2496E80d143C2437c931EC75",
-      "transactionHash": "0x3c8029065fbc532613fbaa18eb50d95da9d3aed129bb63a50f80e4da142af26f"
+      "address": "0x2d11723d94fF0a407d0c9EfeE2E17F7C5D8b228b",
+      "transactionHash": "0x1dd565857e2c3ce45f3f6de36d6d0d81bbe14861d6d2e95dec6a27f2f388aa47"
     }
   },
   "schemaVersion": "3.4.2",
-  "updatedAt": "2021-08-25T09:59:47.504Z",
+  "updatedAt": "2021-08-25T14:01:18.220Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
